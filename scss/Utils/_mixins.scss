@@ -1,0 +1,66 @@
+
+
+
+@mixin shadowBottom
+{
+    box-shadow: 0.5em 0.5em 0.7em 0.3em $couleurPrincipalePorteFolio;
+}
+@mixin shadowTop
+{
+    box-shadow: -0.2em -0.2em 0.7em 0.3em $couleurPrincipalePorteFolio;
+}
+@mixin shadowSection
+{
+    box-shadow: 0.5vh 0.5vh 0.7vh $couleurSecondairePorteFolio;
+}
+//Texte Bordure//
+
+@mixin bordureTexteBlanche
+{
+    text-shadow: 0px 0px 2px $BordureTexteBlanche;
+}
+
+//typographie
+
+@mixin typographieFolio($color: $couleurTertiairePorteFolio)
+{
+    color: $color;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px eclaircissement($couleurTertiairePorteFolio);
+    font-size: 2vh;
+}
+
+@mixin typographieIllustrator($color: black, $size: 2vh)
+{
+    color: $color;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px black;
+    font-size: $size;
+}
+
+//Les hovers//
+
+    @mixin linkHover
+    {
+        font-size: 3vh;
+        color: eclaircissement($couleurSecondairePorteFolio);
+        text-shadow: 0.5vh 0.5vh $couleurSecondairePorteFolio;
+
+    }
+
+    @mixin logoHover
+    {
+        text-shadow: 1px 1px 2px lighten($couleurSecondairePorteFolio,50%);
+        transform: translateX(50px);
+        color: $couleurLogoPorteFolio;
+    }
+
+    @mixin boutonIlluHover
+    {
+        background-color: #f1f1f1;
+        color: black;
+        transition-duration: 600ms;
+    }
+///////////////////////////

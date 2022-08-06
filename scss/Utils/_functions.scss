@@ -1,0 +1,11 @@
+@function eclaircissement($colour)
+{
+    @if ( lightness($colour) < 25%)
+    {
+         @return lighten($colour, 10%);
+    }
+    @else
+    {
+        @return darken($colour, 10%);
+    }
+}
