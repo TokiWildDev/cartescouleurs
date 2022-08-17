@@ -352,6 +352,9 @@ body {
 .containGalerie__elements--degrade9 {
   background: linear-gradient(90deg, rgb(0, 36, 4) 0%, rgb(53, 121, 9) 27%, rgb(29, 0, 255) 100%);
 }
+.containGalerie__elements--degrade10 {
+  background: linear-gradient(45deg, transparent, transparent 40%, yellow);
+}
 
 .containVitrine .headerIllu {
   text-align: center;

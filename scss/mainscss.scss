@@ -470,6 +470,10 @@ body
         {
             background: linear-gradient(90deg, rgba(0,36,4,1) 0%, rgba(53,121,9,1) 27%, rgba(29,0,255,1) 100%);
         }
+        &--degrade10
+        {
+            background: linear-gradient(45deg, transparent, transparent 40%, yellow);
+        }
 
     }
 
